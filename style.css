@@ -1,0 +1,137 @@
+* {
+  /* 요소의 크기를 박스 테두리로 설정한다 */
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:sans-serif
+}
+/* 링크 기본 CSS 값 초기화 */
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 960px; /*  */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+/* Nav */
+nav {
+  height: 80px;
+  background-color: #434344;
+  line-height: 80px;
+}
+.nav-logo {
+  font-size: 30px;
+  float: left;
+  margin: 0;
+}
+.nav-logo > a {
+  color: white;
+}
+
+nav::after {
+  content: "";
+  display: block;
+  clear:both; /*float로 인해 빈공간에 영역이 잡히지 않도록 막아주는 역활을 한다*/
+}
+
+.nav-menu{
+  float: right;
+}
+.nav-btn {
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.nav-btn > li{
+  float: left;
+  margin-left: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Header */
+.hd {
+  position: relative;
+  height: 600px;
+  text-align: center; /*inline 요소 정렬*/
+}
+
+.hd-title{
+  font-size: 80px;
+  margin-top:0;
+  margin-bottom: 30px;
+  padding-top: 200px;
+}
+
+.hd-content {
+  font-size: 25px;
+}
+/* 이미지 블러 처리 - 공식처럼 적용되는 소스가 있음. 복붙하면 됨 */
+.hd:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left : 0;
+  top : 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background-image: url("./AppleHomeImg/promo_macmini__fg9smqdnyjmi_medium.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hd .container {
+  position: relative;
+  color: white;
+}
+
+/* float 활용해서 가로 정렬 한다는데 왜 그럴까? */
+
+/* Section */
+.sec {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f2f2f2;
+}
+
+.sec article {
+  float: left;
+  width: 300px;
+  margin-right:30px;
+}
+.sec article:last-child {
+  margin-right: 0;
+}
+
+.sec article img {
+  width: 100%;
+  height: auto;
+}
+
+.card-img {
+  overflow: hidden;
+  width: 300px;
+  /*heigth : 300px;*/
+}
+/* section에 clear fix 적용. -> section의 높이 값이 사라짐*/
+.sec::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Footer */
+.ft {
+  padding: 15px 0;
+  text-align: start; /* 왼쪽에 붙이기 */
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
