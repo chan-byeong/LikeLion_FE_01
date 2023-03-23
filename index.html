@@ -6,62 +6,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Style.css 파일 연결 -->
+  <!-- Style.css 파일 연결 & CSS 초기화-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="./style.css">
+  
   <!-- 폰트 다운로드 해서 연결하기 -->
+
   <title>Apple (대한민국) </title>
+  <script defer type="module" src="./main.js"></script>
 </head>
 
 <body>
 
+  <!-- Navigation -->
   <nav>
-    <div class="container">
-      <h1 class="nav-logo"> <a href="./index.html">Layout</a> </h1>
-      <div class="nav-menu">
-        <ul class="nav-btn">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#" target="_self">소개</a></li>
-          <li><a href="#" target="_blank">Techit</a></li>
-        </ul>
-      </div>
-    </div>
+
   </nav>
   
-  <header class="hd">
+  <!-- Main -->
+  <main>
 
-    <div class="container">
-      <h2 class="hd-title">POSSIBILITY TO REALITY!</h2>
-      <p class="hd-content">여러분을 응원합니다 :)</p>
-    </div>
-
-  </header>
-
-  <section class="sec">
-
-    <div class="container">
-      <article class="art-1">
-        <!-- 이미지는 inline 속성이라서 다루기 쉽지 않음. 그래서 div로 한번 감싸주고 다뤄준다. -->
-        <div class="card-img"> 
-          <img src="./AppleHomeImg/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_mediumtall.jpg" alt="img1">
+    <!-- Heros -->
+    <section class="apple-pay">
+      <div class="inner">
+        <div class="copy-wrapper">
+          <h1 class="headline"></h1>
+          <h2 class="sub-head">카드 없이.현금 없이.오늘부터 바로.</h2>
+          <a href="#" class="link-btn">더 알아보기</a>
         </div>
-        <p>애플워치</p>
-      </article>
-      <article class="art-2">
-        <div class="card-img"> 
-          <img src="./AppleHomeImg/hero_iphone14_yellow_preorder__9y5sfdg5m5eu_mediumtall.jpg" alt="img2">
-        </div>
-        <p>아이폰14</p>
-      </article>
-      <article class="art-3">
-        <div class="card-img"> 
-          <img src="./AppleHomeImg/hero_iphone14pro_spring__9xo85pm6sbmm_mediumtall.jpg" alt="img3">
-        </div>
-        <p>아이폰14 pro</p>
-      </article>
-    </div>
+    
+      </div>
+    </section>
 
-  </section>
+    <!-- Promos -->
+    <section class="sec">
 
+    </section>
+
+    <!-- Tv Plus -->
+    <section class="sec">
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
   <footer class="ft">
     <div class="container">
       <p>&copy; 2023 LIKELION. All rights reserved</p>
@@ -70,3 +61,23 @@
 
 </body>
 </html>
+
+<!-- 
+
+    <div class="module-content">
+          <div class="unit-wrapper">
+            <a href="#" class="unit-link"></a>
+            <div class="copy-wrapper">
+              <h2 class="headline"></h2>
+              <h3 class="subhead"></h3>
+              <div class="links">
+                <a href="#" class="btn-blue"></a>
+              </div>
+            </div>
+            <div class="unit-img-wrapper">
+              <figure class="unit-img unit-img-apple-pay"></figure>
+            </div>
+          </div>
+        </div>
+
+ -->
